@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ash's Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Acme', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 0px;
+    }
+
+    .left img {
+        width: 116px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 0px;
+        font-size: 24px;
+        text-align: center;
+
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 31px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 35px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 13px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 9px 14px;
+        border: 2px solid gray;
+        border-radius: 9px;
+        font-size: 12px;
+        cursor: pointer;
+        font-family: 'Acme', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(43, 40, 40);
+    }
+
+    .container {
+        /* border: 2px solid green; */
+        margin: 78px -61px;
+        padding: 25px 113px;
+        width: 36%;
+        border-radius: 38px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 481px;
+        padding: 1px;
+        border: 2px solid black;
+        font-size: 21px;
+        border-radius: 8px;
+        margin: 5px auto;
+        font-family: 'Acme', sans-serif;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 106%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/ash.png" alt="">
+            <div>Ash's Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Centre</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of kolkata now</h1>
+        <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Email-id">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone Number">
+        </div>
+        <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
